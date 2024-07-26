@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Approuver la demande de congé</h2>
+<p>Voulez-vous approuver la demande de congé pour {{ leave.employee.first_name }} {{ leave.employee.last_name }} ?</p>
+<form method="post">
+    {% csrf_token %}
+    <button type="submit">Approuver</button>
+</form>
+{% endblock %}

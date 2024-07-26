@@ -1,0 +1,12 @@
+{% extends "leave_management/base.html" %}
+
+{% block title %}Formulaire de Demande de Congé{% endblock %}
+
+{% block content %}
+    <h2>Formulaire de Demande de Congé</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Soumettre</button>
+    </form>
+{% endblock %}

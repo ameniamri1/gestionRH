@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Ma Application{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>Bienvenue à Ma Application</h1>
+    </header>
+    <main>
+        {% block content %}
+        <!-- Contenu principal -->
+        {% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2024 Ma Application</p>
+    </footer>
+</body>
+</html>
