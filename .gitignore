@@ -1,0 +1,8 @@
+# Ignorer le répertoire de l'environnement virtuel
+venv/
+
+# Ignorer les fichiers de base de données SQLite
+*.sqlite3
+
+# Ignorer les fichiers d'environnement
+.env
